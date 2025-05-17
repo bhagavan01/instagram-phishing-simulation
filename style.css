@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Ubuntu:wght@300;400;500&display=swap');
+
+* {  
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 20px;
+}
+
+.left img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 40px 30px;
+    border-radius: 8px;
+    width: 360px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    background-color: #fff;
+}
+
+.instagram-logo {
+    font-family: 'Billabong', cursive;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #262626;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    margin: 8px 0;
+    font-size: 14px;
+    background-color: #fafafa;
+    transition: border-color 0.3s;
+}
+
+.input:focus {
+    border-color: #a8a8a8;
+    background-color: #fff;
+    outline: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    font-weight: 700;
+    background-color: #0095f6;
+    border: none;
+    border-radius: 6px;
+    margin: 16px 0;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #007bb5;
+}
+
+#or {
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(0,0,0,0.3);
+    text-align: center;
+    position: relative;
+}
+
+#or:before,
+#or:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: rgba(0,0,0,0.15);
+}
+
+#or:before {
+    left: 0;
+}
+
+#or:after {
+    right: 0;
+}
+
+.facebook-login {
+    font-weight: 700;
+    font-size: 14px;
+    color: #385185;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    margin: 10px 0 20px 0;
+    color: #00376b;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.sign-up {
+    text-align: center;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.sign-up a {
+    color: #0095f6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sign-up a:hover {
+    text-decoration: underline;
+}
+
+.get-app {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #999;
+}
+
+.store {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+#play {
+    width: 120px;
+}
