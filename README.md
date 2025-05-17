@@ -29,13 +29,19 @@ After submission, it redirects users to the official Instagram login page.
    git clone https://github.com/yourusername/instagram-phishing-simulation.git
    cd instagram-phishing-simulation
 2.Create a virtual environment (recommended):
+
+```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 3.Install dependencies:
+```bash
 pip install -r requirements.txt
+```
 4.Run the app:
+```bash
 python app.py
-
+```
 Usage
 Enter any username and password on the login page.
 
