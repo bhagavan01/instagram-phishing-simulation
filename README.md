@@ -34,11 +34,7 @@ After submission, it redirects users to the official Instagram login page.
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
-3.Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-4.Run the app:
+3.Run the app:
 ```bash
 python app.py
 ```
